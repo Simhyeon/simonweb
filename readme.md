@@ -1,3 +1,5 @@
+link: https://simoncreek.xyz
+
 ### Simple repository for my website.
 
 ### It was horribly awful experience to share code through ssh.
