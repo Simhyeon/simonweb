@@ -23,5 +23,5 @@ jobs:
           local: src
           remote: ${{ secrets.PATH }}
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.SSH_USER }}
+          username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
