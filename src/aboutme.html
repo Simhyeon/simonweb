@@ -7,10 +7,229 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.5.1.js" charset="utf-8"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<style type="text/css" media="screen">
+		.container p{
+			font-size: 20px;
+		}
+		.container li {
+			font-size: 18px;
+		}
+		.container img {
+			width: 100%;
+		}
+		figcaption {
+			text-align: center;
+			margin: auto;
+		}
+		</style>
 	</head>
 	<body>
-		<div>
-			
-		</div>
+		<div class="bg"> 
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Simon Creek</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active" ><a class="hover-hightlight" href="https://blog.simoncreek.xyz" style="background-color: #00000000;">Blog<span class="sr-only">(current)</span></a></li>
+							<li class="active" ><a class="hover-hightlight" href="https://github.com/Simhyeon/" style="background-color: #00000000;">Github<span class="sr-only">(current)</span></a></li>
+							<li class="active" ><a class="hover-hightlight" href="./aboutme.html" style="background-color: #00000000;">About Me<span class="sr-only">(current)</span></a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<!-- Article -->
+			<article class="container">
+				<h2>Who am I?</h2>
+				<hr/>
+				<p>
+				I'm a <strong>desops</strong> engineer and game system designer. 
+				</p>
+				<br/>
+				<p>
+				You might say "Hol up what is <strong>desops</strong>?"
+				</p>
+				<br/>
+				<p>
+				Well it's a composite word of "Design" and "Operation". Desops is all about integrating design process and operation. While operation in a game design field is not quite intuitive at the first time, however it is not so different from traditional meaning of operation.
+				</p>
+				<p>
+				Operation is a task to manage and serve a product. Deploying a product into multiple servers, reguarly checking server statuses ETC. These days many companies have accepted devops process thus concept and role of pure operation team is not quite so distinctive. Still, operation's core part is about management and service.
+				</p>
+				<p>
+				So what is an operation in game design? Game design operation is about managing and serving game designs to developers. Game design has multiple aspects. First, game design is an instruction manual. Programmers' and artists' works are defined by game designs. At the same time, game design is a documentation of the game. People refers to game design documents to find out why other programmers and artists made such work and why it should not be modified or removed or even extended. In conclusion, desops is about integrating a process of game design and design opreation.
+				</p>
+				<h3>Why need desops?</h3>
+				<hr/>
+				<p>
+				Because efficient operation is not easy for game designers. Efficient operation should enable continuous integration(CI) and continuous deployment(CD) of game designs. 
+				</p>
+				<p>
+				Continuous integration, or CI in short, enables automatic merge and test process. With proper CI, multiple author's design documents are merged without hassel and gets tested whether the final result is valid or correspond to team's requirements.
+				</p>
+				<p>
+				Continuous deployment, or CD in short, enables automatic service. Game design should be able to be exported as multiple formats and representation styles without designers modifying them by hand. Such service should let recipients to easily create feedback which can be possibly applied to the original design document easily.
+				</p>
+				<p>
+				So let's go back to the original question. Why need desops? We need desops because desops will do many good things for game development teams.
+				</p>
+				<ul>
+					<li>
+					Easy version control of game design documents
+					</li>
+					<li>
+					Dynamic document creation so that designers don't have to write same things over and over again
+					</li>
+					<li>
+					Designers can automatically distribute their documents that correspond to various requirements without touching documents at all
+					</li>
+				</ul>
+				<h2>What have I done as a game developer?</h2>
+				<hr/>
+				<h3><strong>As a desops engineer</strong></h3>
+				<br/>
+				<h4><strong>Gesign editor</strong></h4>
+				<a href="https://github.com/simhyeon/gesign" target="_blank">Github</a>
+				<figure id="gesign_demo">
+					<img src="./gesign_demo.png" alt="Gesign demo image"/>
+					<figcaption>Gesign demo: Level manager is outdated because it is older than level.</figcaption>
+				</figure>
+				<br/>
+				<p>
+				Gesign editor is an editor which supports file references checking mechanism. In the above demo illustration, levelmanager.gdml file is currently outdated. This means that files that level manager is referencing has changed but level manager did not update its contents. In this case, level manager is referencing level file. 
+				</p>
+				<p>
+				Basic principle of gesign reference check is that parent file should be always checked manually when parent's referring files or children's content has changed, or children file became outdated. For example if level's mechanism changes it is also very natural that level manager's mechanism might change, thus designer should check for parent files for further updates.
+				</p>
+				<p>
+				Gesign is not currently activebly developed because of several problems which can not be fixed easily without making fundamental changes.
+				</p>
+				<ul>
+					<li>
+					It is an electron based appliation. Slow, bloat and electron's spec is far behind latest javascript standard.
+					</li>
+					<li>
+					Gesign's file type only supports gdml format which is a yaml file with specific composition. Sometimes you need to refer files that is not even a text file however it is not possible in current state of gesign.
+					</li>
+					<li>
+					Gesign is not an library but pure application which means you cannot utilize file reference checking in editors other than gesign itself. This is bad for design ergonomics.
+					</li>
+					<li>
+					File's timestamp comparison is platform agonistic.
+					</li>
+				</ul>
+				<p>
+				These are the reaons why I started to make rif library which will be introduced later in this part.
+				</p>
+				<br/>
+				<h4><strong>Gdmarp script</strong></h4>
+				<a href="https://github.com/simhyeon/gdmarp" target="_blank">Github</a>
+				<br/>
+				<figure id="gdmarp_demo">
+					<img src="./gdmarp_demo.png" alt="Gdmarp demo image"/>
+					<figcaption>Gdmarp demo: Simple markdown file is converted into a pdf or pptx.</figcaption>
+				</figure>
+				<br/>
+				<p>
+				Gdmarp is an automation script which converts markdown file into a pdf or pptx file. Gdmarp consists of marp program and multiple unix text processing programs such as sed, awk and most importantly m4 macro processor. M4 macros are predefined and can be expanded into valid html tags. This expanded markdown with additional html tags are converted into a pdf or pptx file with help from marp. 
+				</p>
+				<p>
+				Gdmarp is a very versatile script which utilizes features like variables, sql macros etc. For example, designers can set variable macros and use those macros in markdown file. If variable changes, recompilation will change those variables in final result. 
+				</p>
+				<p>
+				Gdmarp is distributed as docker container and easily integrated with CI/CD services such as github actions or travis-ci.
+				</p>
+
+				<br/>
+				<h4><strong>Rif library(WIP)</strong></h4>
+				<a href="https://github.com/simhyeon/rif" target="_blank">Github</a>
+				<hr/>
+				<p>
+				Rif is another approach to enable file references checking but without external editor. Gesign was a good start however it was incomplete in terms of fundamentals and couldn't be extended to higher levels. So I started a new project called rif.
+				</p>
+				<p>
+				Rif's architecture is mostly same with gesign's. However rif doesn't have any functionality of file editing and files' timestamps are stored in a separate file called <strong>rif.json</strong>. This can enable rif's integration to other editors such as vim or vs code, yet you can always manually set the file's status and use simple editor even without integration. 
+				</p>
+				<hr/>
+				<h3>As a game designer</h3>
+				<br/>
+				<p>
+				I have made several games by my hand. Why? Because desops is about operating game designs and therefore desops should understand feedbacks from recipients which are mostly programmers.
+				</p>
+				<br/>
+				<h4><strong>Card game: HOMM fan game</strong></h4>
+				<figure id="card game demo">
+					<img src="./card_game_riddler.png" alt="Card game demo"/>
+					<figcaption>Card game demo: I used unity's in-built networking system.</figcaption>
+				</figure>
+				<br/>
+				<p>
+				At the time I first created this game(which was 2017), I had no idea what was game engine capable of and I barely understood what programming was. Therefore it took several months just to make this game. I learnt c# programming language and some networking concepts and extracted game assets from a game called Heroes of Might and Magic VII. Now, that is not so a confident way to make a game, however I was not going to publish a game and I liked the game, plus I just needed sample resourcese to make my game look a little bit "professional."
+				</p>
+				<p>
+				Making a game was not so easy then, because I hardly knew how to program. However it was doable and I learnt that nothing is impossible, yet it would take some times at worst.
+				</p>
+				</br>
+				<h4><strong>Tetris game and data oriented</strong></h4>
+				<a href="https://github.com/simhyeon/tetrisgame" target="_blank">Github</a>
+				<figure id="tetris game demo">
+					<img style="width: 40%; margin: auto; display:block;" src="./tetris_demo.png" alt="Card game demo"/>
+					<figcaption>Tetris game demo: This game was made by data oriented game engine and rust programming language.</figcaption>
+				</figure>
+				<br/>
+				<p>
+				I studied rust language and learnt there is a very promissing idea called <strong>data oriented programming</strong>. Unity was developing their own data oriented technology stack but it felt insufficient compared to their traditional object oriented stack. So I decided to start from scratch, which was not actually a scratch since I used a game engine called amethyst.
+				</p>
+				<p>
+				Making a game without object orient programming was very refreshing and somewhat confusing experience. Object oriented programming is a very handy concepts. Any programmers who have used unreal engine knows inheirtance is a god sent present. Data oriented programming does not have a concept of inheritance nor polymorphism. They were born not to deter those concepts but to gain greater good which is <strong>speed</strong> This philosophy made a whole game development process very interesting.
+				</p>
+				<p>
+				I didn't fully understand data oriented programming on start and went through several trial and errors. But eventually made fully data oriented testris. I'm not going to go into details how data oriented programming works, yet I want to say that I realized data oriented programming is way better than object oriented programming in a long run.
+				</p>
+				</br>
+				<h4><strong>Hand made card game server and clients</strong></h4>
+				<a href="https://github.com/simhyeon/cardserver" target="_blank">Github</a>
+				<figure id="Card game server demo">
+					<img src="./card_game_server.png" alt="Card game server demo"/>
+					<figcaption>Card game server/client demo: This time I concentrated on making server and client interaction.</figcaption>
+				</figure>
+				<br/>
+				<p>
+				I wanted to learn how game servers work. There are few open source game servers such as nakama. But again I decided make a game server from scratch. 
+				</p>
+				<p>
+				I made a game server with rust language and used very lightweight http library called warp. I've never learnt about websockets thus it started slow, but when I grasped a whole idea of websockets and how byte streaming works, only several days were required to complete game server.
+				</p>
+				<p>
+				Game client was made with simple html,css,javascript codes. I didn't want to put too much time on client since my interest was on game server.
+				</p>
+				<br/>
+				<h4><strong>Reverse game designs</strong></h4>
+				<a href="https://gd.simoncreek.xyz" target="_blank">Game design link</a>
+				<br/>
+				<br/>
+				<p>
+				All reverse game designs are made with gdmarp.
+				</p>
+				<br/>
+
+				<h5>Seven knights 2</h5>
+				<h5>Gran saga</h5>
+				<h5>V4</h5>
+				<h5>Vindictus</h5>
+				<h5>Seven knights 2</h5>
+
+			</article>	
+		</div>	
 	</body>
 </html>
