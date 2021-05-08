@@ -8,6 +8,9 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.js" charset="utf-8"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<style type="text/css" media="screen">
+		html, body {
+			100%;
+		}
 		.container p{
 			font-size: 20px;
 		}
@@ -44,6 +47,7 @@
 							<li class="active" ><a class="hover-hightlight" href="https://blog.simoncreek.xyz" style="background-color: #00000000;">Blog<span class="sr-only">(current)</span></a></li>
 							<li class="active" ><a class="hover-hightlight" href="https://github.com/Simhyeon/" style="background-color: #00000000;">Github<span class="sr-only">(current)</span></a></li>
 							<li class="active" ><a class="hover-hightlight" href="https://simoncreek.xyz/aboutme.html" style="background-color: #00000000;">About Me<span class="sr-only">(current)</span></a></li>
+							<li class="active" ><a class="hover-hightlight" href="https://simoncreek.xyz/portfolio_kr.html" style="background-color: #00000000;">포트폴리오<span class="sr-only">(current)</span></a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
@@ -80,6 +84,11 @@
 				<p>
 				Continuous deployment, or CD in short, enables automatic service. Game design should be able to be exported as multiple formats and representation styles without designers modifying them by hand. Such service should let recipients to easily create feedback which can be possibly applied to the original design document easily.
 				</p>
+				<figure id="desops_flow">
+					<img style="width: 80%; display:block; margin: auto;"src="./desops_flow.png" alt="Desops flow"/>
+					<figcaption>Desops demo : This is a modified work flow of general game design for desops integration.</figcaption>
+				</figure>
+				<br/>
 				<p>
 				So let's go back to the original question. Why need desops? We need desops because desops will do many good things for game development teams.
 				</p>
@@ -111,6 +120,15 @@
 				<p>
 				Basic principle of gesign reference check is that parent file should be always checked manually when parent's referring files or children's content has changed, or children file became outdated. For example if level's mechanism changes it is also very natural that level manager's mechanism might change, thus designer should check for parent files for further updates.
 				</p>
+				<p>
+				For example, following logic is always applied when checking files statuses
+				</p>
+				<br/>
+				<figure id="gesign_flow">
+					<img style="width: 70%; margin: auto; display: block;" src="./gesign_flow.png" alt="Gesign flow image"/>
+					<figcaption>Gesign logic: High level component gets outdated when referring low level components is newer than high level component.</figcaption>
+				</figure>
+				<br/>
 				<p>
 				Gesign is not currently activebly developed because of several problems which can not be fixed easily without making fundamental changes.
 				</p>
@@ -146,6 +164,14 @@
 				<p>
 				Gdmarp is a very versatile script which utilizes features like variables, sql macros etc. For example, designers can set variable macros and use those macros in markdown file. If variable changes, recompilation will change those variables in final result. 
 				</p>
+				<p>
+				Basic work flow of gdmarp is as follows,
+				</p>
+				<figure id="gdmarp_flow">
+					<img style="display:block; margin:auto; width: 50%;" src="./gdmarp_flow.png" alt="Gdmarp flow image"/>
+					<figcaption>Gdmarp flow: All processes are doen with simple command 'gdmarp compile'</figcaption>
+				</figure>
+				<br/>
 				<p>
 				Gdmarp is distributed as docker container and easily integrated with CI/CD services such as github actions or travis-ci.
 				</p>
@@ -188,18 +214,24 @@
 				</figure>
 				<br/>
 				<p>
-				I studied rust language and learnt there is a very promissing idea called <strong>data oriented programming</strong>. Unity was developing their own data oriented technology stack but it felt insufficient compared to their traditional object oriented stack. So I decided to start from scratch, which was not actually a scratch since I used a game engine called amethyst.
+				I studied rust language and have been craving for opportunity to make game that implements <strong>data oriented programming</strong>. Unity was developing their own data oriented technology stack but it felt insufficient compared to their traditional object oriented stack. So I decided to finally start developing when I had found very easy to use command line game engine called amethyst.
 				</p>
 				<p>
-				Making a game without object orient programming was very refreshing and somewhat confusing experience. Object oriented programming is a very handy concepts. Any programmers who have used unreal engine knows inheirtance is a god sent present. Data oriented programming does not have a concept of inheritance nor polymorphism. They were born not to deter those concepts but to gain greater good which is <strong>speed</strong> This philosophy made a whole game development process very interesting.
+				Making a game without object orient programming is very refreshing and somewhat confusing experience. Object oriented programming is a very concrete implementation of programmingmethodology. Any programmers who have used unreal engine knows inheirtance is a god sent present. Data oriented programming does not have a concept of inheritance nor polymorphism. They were born not to deter those concepts intentionally but dropped them to gain greater good which is <strong>speed</strong>. This philosophy made a whole game development process very interesting.
 				</p>
+				<br/>
+				<figure id="tetrisStructrue">
+					<img src="./tetris_flow.png" alt="Tetris flow demo"/>
+					<figcaption>Simple demonstration of how tetris game works as a data oriented programming pipeline.</figcaption>
+				</figure>
+				<br/>
 				<p>
-				I didn't fully understand data oriented programming on start and went through several trial and errors. But eventually made fully data oriented testris. I'm not going to go into details how data oriented programming works, yet I want to say that I realized data oriented programming is way better than object oriented programming in a long run.
+				I didn't fully understand data oriented programming on start and went through several trial and errors. I'm not going to go into details how data oriented programming works, yet I want to say that I realized data oriented programming is way better than object oriented programming in a long run. (But you can find a few trials and errors in my blog post if you want to know.)
 				</p>
-				</br>
+				<br/>
 				<h4><strong>Hand made card game server and clients</strong></h4>
 				<a href="https://github.com/simhyeon/cardserver" target="_blank">Github</a>
-				<figure id="Card game server demo">
+				<figure id="cardGameServerDemo">
 					<img src="./card_game_server.png" alt="Card game server demo"/>
 					<figcaption>Card game server/client demo: This time I concentrated on making server and client interaction.</figcaption>
 				</figure>
