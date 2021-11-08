@@ -4,56 +4,83 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Simon Creek</title>
+		<!-- Font awesome -->
+		<script src="https://kit.fontawesome.com/99f4a61ebe.js" crossorigin="anonymous"></script>
 		<!-- Bootstrap js -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
 		<style type="text/css" media="screen">
 			.bg {
-				/* The image used */
-				background-image: url("./img/dave-hoefler.jpg");
-			
 				/* Full height */
 				height: 100%;
-			
-				/* Center and scale the image nicely */
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-			.copyright {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				color: gray;
 			}
 
+			hr {
+				color: #d8d8d8;
+			}
+
+			i {
+				font-style: initial;
+			}
+
+			p {
+				margin-top: 24px;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="bg"> 
 			$include(navbar.html)
-			<div class="p-5 mb-4 rounded-3">
-				<div class="container-fluid py-5">
-					<h1 class="display-5 fw-bold">Simon creek is my name.</h1>
-					<p class="col-md-8 fs-4">
-					I'm an undergraduate student of Kookmin university, South
-					Korea.  I do programming as a hobby and I seek pleasure
-					from making various programs or web services.  Including
-					this website, I made several web sevices: Git hosting
-					server, private cloud storage(nextcloud), blog website and
-					my mediawiki instance.  I have been creating some game
-					design related programs too. If you are interested, please
-					visit my github page.
-					</p>
+			<div class="container-fluid p-5 col-md-8 ">
+				<div style="display:flex; flex-direction:row; align-items:center;">
+					<img style="width:50px; height:auto; border-radius: 50%;" src="img/portrait.jpg" alt="portrait"/>
+					<h1 class="ms-4 display-5 fw-bold">Simon creek</h1>
+					<h5 class="ms-2 fw-bold">(육심현)</h5>
+				</div>
+				<p class="fs-4">
+				I'm an amatuer game designer and also a
+				devops engineer. I've been making game development tools
+				and reverse-designed several game systems.
+				</p>
+				<p class="fs-4">
+				I'm also a rust programmer and enthusiast. I have some
+				experience in Unity C# and android kotlin(Java). I don't have
+				any bias against programming languages, every learning process
+				is interesting.
+				</p>
+				<hr/>
+				<div id="projects">
+					<h3 class="mb-4 fw-bold"># Projects</h3>
+					<h4 class="fw-bold inline">Rif <a style="display:inline-block; width:25px; height:25px; color: black; text-decoration:none;" href="https://github.com/simhyeon/rif"><i class="fa-brands fa-github"></i></a> </h4>
 					<p>
-					<a href="https://github.com/simhyeon/simonweb" target="_blank">Github repo for current website.</a>
+					Rif is an impact control system. Rif enables users to
+					control impacts of file changes which has deep
+					inter-connectivity with other files.
+					</p>
+					<h4 class="fw-bold inline">Gde <a style="display:inline-block; width:25px; height:25px; color: black; text-decoration:none;" href="https://github.com/simhyeon/gde"><i class="fa-brands fa-github"></i></a> </h4>
+					<p>
+					Gde is an game design document creation engine. Gde can yield
+					various formats such as pptx, docx or pdf from single input
+					gddt file.
+					</p>
+					<h4 class="fw-bold inline">R4d <a style="display:inline-block; width:25px; height:25px; color: black; text-decoration:none;" href="https://github.com/simhyeon/r4d"><i class="fa-brands fa-github"></i></a> </h4>
+					<p>
+					R4d(rad) is a text oriented macro processor. R4d was created as
+					an alternative to m4 macro processor. There are no m4 quotes
+					neither no ambiguous macro calls. R4d can be used as a library
+					and highly configurable.
 					</p>
 				</div>
-			</div>
-			<div class="copyright">
-				Image by dave-hoefler, Unsplash
-			</div>
+				<div id="designs">
+					<h3 class="fw-bold inline"># Reverse designs <a style="display:inline-block; width:25px; height:25px; color: black; text-decoration:none;" href="https://gd.simoncreek.xyz"><i class="fab fa-git-alt"></i></a></h3>
+					<p>
+					I've made several reverse design documents of games. Every
+					documents were made with gdengine(or its predecessor
+					gdmarp). Mostly projects' target platform is pdf slide.
+					</p>
+				</div>
+			</div> <!-- End Container -->
 		</div>	
 	</body>
 </html>
