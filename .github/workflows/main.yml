@@ -16,14 +16,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Rad processing
-      run: sudo apt install -y curl make &&
-           curl -L https://github.com/Simhyeon/r4d/releases/download/1.1.1/rad_x86_64-unknown-linux-gnu > rad &&
-           chmod 777 rad &&
-           sudo cp rad /usr/bin/ &&
-           make
-  
     - name: Copy via ssh
       uses: garygrossgarten/github-action-scp@v0.6.0  
       with:
