@@ -4,8 +4,9 @@
 
 Simple, there are template folder which contains fragments of html files.
 
-I use m4 macro to include fragments into a single.
+I use [rad](https://github.com/simhyeon/r4d) macro to include fragments into a
+single file.
 
-You might have guessed it, it is some crude version of template engine.
-
-Configuring complete code base for proper template engine for this size of website is a waste of effort, at least I believe so.
+You might have guessed it, it is some crude version of template engine. Though
+I think using react or other frameworks on par with react would be handy. Yet I
+was too busy to learn any of such.
