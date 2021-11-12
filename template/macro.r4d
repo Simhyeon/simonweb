@@ -1,0 +1,1 @@
+$define(gitlink,a_repo=<a class="ibtn" href="https://github.com/$a_repo()" target="_blank"><i class="fa-brands fa-github"></i></a>)
