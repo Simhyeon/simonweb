@@ -51,177 +51,98 @@
 			<div class="container-fluid p-5 col-md-8" style="max-width: 830px;">
 				<p>목차</p>
 				<ol>
-					<li><a href="#systemDesign" target="_self">시스템 디자인</a></li>
+					<li><a href="#reverse-design" target="_self">콘텐츠 역기획</a></li>
 					<ul>
-						<li><a href="#sevenKnights2" target="_self">세븐나이츠2 레이드</a></li>
-						<li><a href="#vindictus" target="_self">마비노기 영웅전 강화</a></li>
-						<li><a href="#granSaga" target="_self">그랑사가 왕국 퀘스트</a></li>
-						<li><a href="#v4Game" target="_self">V4 마석</a></li>
-						<li><a href="#lostArk" target="_self">로스트아크 진형</a></li>
+						<li><a href="#black-desert-boss-rush" target="_self">검은사막M 토벌</a></li>
+						<li><a href="#dnfm-phantom-troupe" target="_self">던전앤파이터M 환영극단</a></li>
 					</ul>
-					<li><a href="#desops" target="_self">데브옵스 엔지니어링</a></li>
+					<li><a href="#design-tools" target="_self">게임 디자인 도구 개발</a></li>
 					<ul>
-						<li><a href="#Gdengine" target="_self">Gdengine: 게임 기획 엔진</a></li>
-						<li><a href="#rif" target="_self">Rif: 문서 영향 관리 시스템</a></li>
+						<li><a href="#gdengine" target="_self">Gdengine: 게임 기획 엔진</a></li>
+						<li><a href="#gcalc" target="_self">Gcalc: 게임 확률 계산기</a></li>
 					</ul>
-					<li><a href="#gameDevelopment" target="_self">게임 개발</a></li>
+					<li><a href="#game-programming" target="_self">게임 프로그래밍</a></li>
 					<ul>
 						<li><a href="#unityCardGame" target="_self">온라인 카드 게임, 리들러</a></li>
 						<li><a href="#tetrisGame" target="_self">테트리스 게임, 데이터 지향 엔진</a></li>
+						<li><a href="#lattleship" target="_self">LUA 개발, 웹 게임</a></li>
 						<li><a href="#gameServer" target="_self">게임 서버 개발</a></li>
 					</ul>
 				</ol>
 				<br></br>
-				<h3 id="systemDesign">시스템 디자인</h3><a href="https://gd.simoncreek.xyz" target="_blank">모든 기획서 저장소</a>
+				<h3 id="reverse-design">콘텐츠 역기획</h3><a href="https://gd.simoncreek.xyz" target="_blank">모든 역기획서 저장소</a>
 				<hr>
 				<br/>
 				<br>
-				<h4 id="sevenKnights2"><a href="https://gd.simoncreek.xyz/simoncreek/sevenknights2_raid/src/branch/master/%EC%84%B8%EB%B8%90%EB%82%98%EC%9D%B4%EC%B8%A02-%EB%A0%88%EC%9D%B4%EB%93%9C.pdf" target="_blank">세븐나이츠2 레이드 시스템</a></h4>
-				<p>
-				기본적인 기획 구성은 <strong>시스템의 진입</strong>
-				,<strong>시스템의 구성(내용)</strong> 그리고 <strong>시스템의
-				보상</strong>으로 이루어짐 
-				</p>
+				<h4 id="black-desert-boss-rush">검은사막M 토벌 콘텐츠</h4>
+				<p>역기획서의 전체 내용 : <a href="https://gd.simoncreek.xyz/simoncreek/black_dessertm_boss_rush/src/branch/master/%ea%b2%80%ec%9d%80%ec%82%ac%eb%a7%89_M_%ed%86%a0%eb%b2%8c_%ec%bd%98%ed%85%90%ec%b8%a0_%ec%97%ad%ea%b8%b0%ed%9a%8d.pdf"><i class="fab fa-github"></i></a></p>
 				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/sk2_start.png" alt="sk2 start"/>
-					<figcaption>시스템 진입</figcaption>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_fee_1.png" alt="Black dessert entrance fee"/>
+					<figcaption>콘텐츠 구성 1</figcaption>
 				</figure>
-				<br>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/sk2_process.png" alt="sk2 process"/>
-					<figcaption>시스템 구성</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/sk2_reward.png" alt="sk2 reward"/>
-					<figcaption>시스템 보상</figcaption>
-				</figure>
-				<br>
-				<p>
-				그리고 시스템의 UI의 변화, 적용 방식이 어떻게 되는지를 설명하는
-				<strong>UI 구성</strong>, 마지막으로 UI의 대략적인 구조도
-				부분인 <strong>UI 상세</strong>가 위치함
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/sk2_ui.png" alt="sk2 ui"/>
-					<figcaption>UI 구성</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/sk2_ui_spec.png" alt="sk2 ui spec"/>
-					<figcaption>UI 상세</figcaption>
-				</figure>
-				</p>
-				<h4 id="vindictus"><a href="https://gd.simoncreek.xyz/simoncreek/vindictus_enhancement/src/branch/master/%EB%A7%88%EC%98%81%EC%A0%84%EA%B0%95%ED%99%94.pdf" target="_blank">마비노기 영웅전 강화 시스템</a></h4>
-				<br>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_process_1.png" alt="vin process 1"/>
-					<figcaption>시스템 구성 1</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_process_2.png" alt="vin process 2"/>
-					<figcaption>시스템 구성 2</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_process_3.png" alt="vin process 3"/>
-					<figcaption>시스템 구성 3</figcaption>
-				</figure>
-				<br>
-				<p>
-				플로우 차트를 첨부하여 시스템의 진행 구조를 더욱 명확하게 함
-				</p>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_flowchart.png" alt="vindictus flowchart"/>
-					<figcaption>시스템 구조 플로우차트</figcaption>
-				</figure>
-				<h4 id="granSaga"><a href="https://gd.simoncreek.xyz/simoncreek/gransaga_kingdom/src/branch/master/%EA%B7%B8%EB%9E%91%EC%82%AC%EA%B0%80_%EC%99%95%EA%B5%AD%ED%80%98%EC%8A%A4%ED%8A%B8_%EC%97%AD%EA%B8%B0%ED%9A%8D.pdf" target="_blank">그랑사가 왕국 퀘스트 시스템</a></h4>
-				<br>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/gran_ui.png" alt="Ui"/>
-					<figcaption>UI 구성</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/gran_ui_spec.png" alt="ui spec"/>
-					<figcaption>UI 상세</figcaption>
-				</figure>
-				<h4 id="v4Game"><a href="https://gd.simoncreek.xyz/simoncreek/v4_incuse/src/branch/master/V4_%EB%A7%88%EC%84%9D%EA%B0%81%EC%9D%B8_%EC%8B%9C%EC%8A%A4%ED%85%9C_%EC%97%AD%EA%B8%B0%ED%9A%8D.pdf" target="_blank">V4 마석 시스템</a></h4>
-				<br>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/v4_concept.png" alt="concept"/>
-					<figcaption>시스템 개요</figcaption>
-				</figure>
-				<p>
-				시스템 개요만으로 시스템의 목적을 명확히 설명하기 어렵다면
-				구체적인 기대효과를 명시하여 기획의 방향성을 직접 설명하여
-				독자들의 이해를 돕도록 함.
-				</p>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/v4_expectation.png" alt="expectation"/>
-					<figcaption>시스템 기대효과</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/v4_ui.png" alt="ui"/>
-					<figcaption>UI 구성</figcaption>
-				</figure>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/v4_ui_spec.png" alt="ui spec"/>
-					<figcaption>UI 상세</figcaption>
-				</figure>
-				<br>
-				<br>
-				<h4 id="lostArk"><a href="https://gd.simoncreek.xyz/simoncreek/lostark_formation/src/branch/master/%EB%A1%9C%EC%8A%A4%ED%8A%B8%EC%95%84%ED%81%AC_%EC%A7%84%ED%98%95%EC%8B%9C%EC%8A%A4%ED%85%9C_%EA%B8%B0%ED%9A%8D.pdf" target="_blank">로스트 아크 진형 시스템 기획</a></h4>
 				<br/>
 				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/loastark_concept.png" alt="concept"/>
-					<figcaption>시스템 개요</figcaption>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_fee_2.png" alt="Black dessert entrace fee"/>
+					<figcaption>콘텐츠 구성 2</figcaption>
 				</figure>
+				<br/>
 				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/lostark_expectation.png" alt="expectation"/>
-					<figcaption>시스템 기대효과</figcaption>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_ratio.png" alt="Black dessert entrace fee"/>
+					<figcaption>콘텐츠 구성 3</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_ui_entry.png" alt="Black dessert entrance ratio multiplication"/>
+					<figcaption>UI 구성 1</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_ui_ready.png" alt="Black dessert ui ready"/>
+					<figcaption>UI 구성 2</figcaption>
 				</figure>
 				<br>
-				<p>
-				시스템이 여러 하위 개념으로 구성된다면 각각의 개요를 작성하여
-				개념과의 구분과 관계를 명확히 함
-				</p>
+				<!-- Separator -->
+				<h4 id="dnfm-phantom-troupe">던파M 환영극단</h4>
+				<p>역기획서의 전체 내용 : <a href="https://gd.simoncreek.xyz/simoncreek/dnfm_phantom_troupe/src/branch/master/public/out.pdf"><i class="fab fa-github"></i></a></p>
 				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/loastark_stance_concept.png" alt="stance"/>
-					<figcaption>시스템 하위 개념 개요 1</figcaption>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/dnf_direction.png" alt="Dnf design direction"/>
+					<figcaption>콘텐츠 구성 1</figcaption>
 				</figure>
+				<br/>
 				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/lostark_formation_concept.png" alt="formation"/>
-					<figcaption>시스템 하위 개념 개요 2</figcaption>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/dnf_entry.png" alt="Dfn entry level"/>
+					<figcaption>콘텐츠 구성 2</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/dnf_set.png" alt="Dnf set item"/>
+					<figcaption>콘텐츠 구성 3</figcaption>
 				</figure>
 				<br>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/lostark_ui.png" alt="ui"/>
-					<figcaption>UI 구성</figcaption>
-				</figure>
-				<br>
-				<p>
-				기존의 시스템과 유사하지 않은 새로운 시스템의 경우는 시스템
-				기획에서 간단하게 예시를 들어 독자의 이해를 높임
-				</p>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/lostark_example.png" alt="example"/>
-					<figcaption>콘텐츠 예시</figcaption>
-				</figure>
-				<h3 id="desops">데브옵스 엔지니어링</h3>
+				<!-- Separator -->
+
+				<h3 id="design-tools">게임 디자인 도구 개발</h3>
 				<hr/>
+				<p>
+				<p>전체 프로젝트 저장소 : <a href="https://github.com/simhyeon"><i class="fab fa-github"></i></a></p>
+				</p>
 				<br>
-				<h4 id="gdengine"><strong>Gdengine, 게임 기획 엔진</strong><a class="ibtn" href="https://github.com/simhyeon/gdengine" target="_blank"><i class="fa-brands fa-github"></i></a></h4>
+				<h4 id="gdengine"><strong>Gdengine, 게임 기획 엔진</strong><a class="ibtn" href="https://github.com/simhyeon/gdengine" target="_blank"><i class="fab fa-github"></i></a></h4>
 				<figure id="gdengine_demo">
 					<img src="./img/gdengine_demo.png" alt="Gdengine demo image"/>
-					<figcaption>Gdengine 데모: 좌측의 위키 페이지와 우측의 pdf 슬라이드는 하나의 파일에서 자동으로 생성된 것임</figcaption>
+					<figcaption>Gdengine 데모: 좌측의 위키 페이지와 우측의 pdf 슬라이드는 하나의 파일에서 자동으로 생성됨</figcaption>
 				</figure>
 				<br>
 				<p>
-				Gdengine(지디엔진)은 게임 기획 문서 생성 도구 및 엔진임.
+				Gdengine(지디엔진)은 게임 기획 문서 생성 도구 및 엔진
 				지디엔진은 전용 파일인 gddt를 컴파일하여 다양한 게임 기획 문서
-				포맷으로 렌더링함.
+				포맷으로 렌더링.
 				</p>
 				<p>
-				사용자는 하나의 gddt 파일만 작성하면 되며 지디엔진에서 지원하는
-				다양한 매크로를 통해서 원소스 멀티 유즈가 가능함. 모든 렌더
-				과정은 하나의 스크립트를 통해서 자동화할 수 있으며
-				html,pdf,png,pptx 등으로 변환할 수 있음
+				Gdengine은 텍스트 기반의 문서 작성이기 때문에 git 등의 <b>VCS에
+				쉽게 적용 가능</b>하며 매크로 기반의 전처리를 거치기 때문에
+				프로젝트와 그룹의 필요에 의하여 <b>완전히 맞춤 설계가
+				가능</b>함
 				</p>
 				<br>
 				<figure id="gdengine_logic">
@@ -229,38 +150,32 @@
 					<br>
 					<figcaption>Gdengine의 렌더 타입</figcaption>
 				</figure>
-				<h4 id="rif"><strong>Rif, 영향 관리 시스템</strong><a class="ibtn" href="https://github.com/simhyeon/rif" target="_blank"><i class="fa-brands fa-github"></i></a></h4>
-				<figure id="rif_demo">
-					<img src="./img/rif_demo.png" alt="Rif demo image"/>
-					<figcaption>Rif 데모: 의존 관계 확인 프로세스의 자동화</figcaption>
+				<h4 id="gcalc"><strong>Gcalc 게임 확률 계산기</strong><a class="ibtn" href="https://github.com/simhyeon/gcalc" target="_blank"><i class="fab fa-github"></i></a></h4>
+				<figure id="gcalc_demo">
+					<img src="./img/gcalc_demo.svg" alt="Rif flow logic"/>
+					<figcaption>Gcalc 플롯 데모</figcaption>
 				</figure>
 				<p>
-				Rif(리프)는 영향 관리 시스템으로서 서로 복잡하게 연결되어 있는
-				문서들의 의존 관계를 저장하고 문서 변경에 따른 취약성을
-				사용자에게 고지하는 역할을 함.
+				Gcalc는 시뮬레이터가 아닌 순수한 확률 계산기. 일반적인
+				등비수열합만으로는 <b>복잡한 게임의 확률을 계산</b>하기 어려운
+				부분을 gcalc가 해결
 				</p>
 				<p>
-				게임 기획 문서는 서로 강력한 상호 의존성을 가지고 있는 반면
-				특정 문서의 변경이 가져오는 영향을 명확하게 추적하고 계산하기
-				쉽지 않음. 이것을 해결하기 위한 프로그램이 리프임. 리프는 모든
-				문서 변경 내용을 추적하고 변경된 문서에 의존성을 가지고 있는
-				문서들의 상태를 새로 업데이트함으로써 프로젝트의 예측 가능성을
-				높임.
+				Gcalc는 시행 횟수별 보너스 확률이나, 비용의 변경, 확률 자체의
+				변경들을 모두 계산에 포함할 수 있고 해당 데이터 차트를 csv
+				형태로 인식하여 <b>자동화된 계산에 특화</b>되어 있음.
 				</p>
-				<figure id="rif_flow">
-					<img src="./img/rif_flow_kr.png" alt="Rif flow logic"/>
-					<figcaption>Rif 작동 방식 개요</figcaption>
-				</figure>
 				<br>
 
 				<!-- Separator -->
 
 				<br>
-				<h2 id="gameDevelopment">게임 개발</h2>
+				<h2 id="game-programming">게임 프로그래밍</h2>
 				<hr/>
 				<br/>
 				<h4 id="unityCardGame"><strong>리들러: 온라인 카드 게임</strong></h4>
 				<a href="https://www.youtube.com/watch?v=AcXMi3vbil4&t=156s" target="_blank">게임 설명 영상</a>
+				<br/><br/>
 				<figure id="cardGameDemo">
 					<img src="./img/card_game_riddler.png" alt="Card game demo"/>
 					<figcaption>Unity와 내장된 네트워크 모듈인 Unet으로 개발한 카드 게임</figcaption>
@@ -291,7 +206,7 @@
 				</ul>
 				<hr>
 				<br/>
-				<h4 id="tetrisGame"><strong>테트리스 게임</strong><a class="ibtn" href="https://github.com/simhyeon/tetrisgame" target="_blank"><i class="fa-brands fa-github"></i></a></h4>
+				<h4 id="tetrisGame"><strong>테트리스 게임</strong><a class="ibtn" href="https://github.com/simhyeon/tetrisgame" target="_blank"><i class="fab fa-github"></i></a></h4>
 				<figure id="tetrisDemo">
 					<img style="width: 50%; display:block; margin: auto;"src="./img/tetris_demo.png" alt="Tetris demo"/>
 					<figcaption>Rust 언어와 데이터 지향 게임 엔진으로 개발한 테트리스 게임</figcaption>
@@ -318,7 +233,41 @@
 				<br>
 				<a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.Tetris" target="_blank">안드로이드 포팅 버전</a>
 				<br><br>
-				<h4 id="gameServer"><strong>게임 서버 개발</strong><a class="ibtn" href="https://github.com/simhyeon/cardserver" target="_blank"><i class="fa-brands fa-github"></i></a></h4>
+				<!-- Lua battleship -->
+				<h4 id="lattleship"><strong>래틀쉽, Lua 웹 게임</strong><a class="ibtn" href="https://github.com/simhyeon/lattlesip" target="_blank"><i class="fab fa-github"></i></a></h4>
+				<a href="https://lattleship.simhyeon.repl.co" target="_blank">Lattleship 게임</a>
+				<br><br>
+				<figure id="cardserver_demo">
+					<img src="./img/lattleship_demo.png" alt="Lattleship demo image"/>
+					<figcaption>Lua 배틀쉽 웹 게임</figcaption>
+				</figure>
+				<br>
+				<p>
+					Lattleship(래틀쉽)은 Lua 웹 서버로 구현된 웹 게임. 
+					<ul>
+						<li>
+							유저의
+							인풋을 받고 서버의 반응을 렌더링 하는 부분은 Javascript로
+							구현. 
+						</li>
+						<li>
+							유저들의 인풋을 처리하는 부분은 Lua의 웹 프레임워크인
+							Luvit으로 작성됨.
+						</li>
+						<li>
+							웹 게임은 서버리스 플랫폼인 Repl.it에서 운영
+						</li>
+					</ul>
+				</p>
+				<br>
+				<figure id="lattleship_logic">
+					<img style="width: 70%; display:block; margin:auto;" src="./img/lattleship_workflow.png" alt="Lattleship logic"/>
+					<br>
+					<figcaption>Lattleship의 작동 구조</figcaption>
+				</figure>
+				<br>
+				<!-- Card game server -->
+				<h4 id="gameServer"><strong>게임 서버 개발</strong><a class="ibtn" href="https://github.com/simhyeon/cardserver" target="_blank"><i class="fab fa-github"></i></a></h4>
 				<br>
 				<a href="https://www.youtube.com/watch?v=eTygwHH1sW4&t=125s" target="_blank">데모 영상</a>
 				<br><br>
