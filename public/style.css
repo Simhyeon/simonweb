@@ -25,3 +25,26 @@ figcaption {
 	color: black;
 	text-decoration:none;
 }
+
+/* --- */
+/* Dark Mode compatible styles*/
+/* This has higher priority over normal scheme */
+@media (prefers-color-scheme: dark) {
+    .darkable-invert {
+        filter: invert(100%);
+    }
+    .darkable-text {
+        color:  #ffffff !important;
+    }
+    .darkable-div {
+        background: #3f3f3f !important;
+    }
+    i {
+        color:  #ffffff !important;
+    }
+    /* Also body as dark themed */
+    body {
+        background: #3f3f3f !important; 
+        color:  #ffffff !important;
+    }
+}
