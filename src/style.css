@@ -26,6 +26,12 @@ figcaption {
 	text-decoration:none;
 }
 
+/* Hyperlink's default style */
+a {
+    color:cornflowerblue;;
+    font-weight: bold;
+}
+
 /* --- */
 /* Dark Mode compatible styles*/
 /* This has higher priority over normal scheme */
