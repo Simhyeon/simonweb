@@ -1,4 +1,5 @@
 $define(gitlink,a_repo=<a class="ibtn" href="https://github.com/$a_repo()" target="_blank"><i class="fab fa-github"></i></a>)
+$define(flink,a_link=<a class="ibtn" href="$a_link()" target="_blank"><i class="fas fa-cloud"></i></a>)
 $static(
     giticon,
     <i class="fab fa-github"></i>
@@ -26,4 +27,12 @@ $static(
 $static(
     root,
     $ifenvel(SITE_RELEASE,https://simoncreek.xyz,http://localhost:8080)
+)
+$static(
+    excel_link,
+    https://1drv.ms/x/s!AiTdHZgDPvlSgwmjtW4R3_AeVEMt?e=vfArQx
+)
+$static(
+    vba_gist,
+    https://gist.github.com/Simhyeon/e5c625cde64da3c369287e24acb0fdc1
 )
