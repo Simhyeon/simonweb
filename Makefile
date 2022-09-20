@@ -1,9 +1,8 @@
 all:
 	mkdir public -p
-	SITE_RELEASE=true
-	rad template/macro.r4d template/index.html        -o public/index.html        -a fin+env -s
-	rad template/macro.r4d template/aboutme.html      -o public/aboutme.html      -a fin+env -s
-	rad template/macro.r4d template/portfolio_kr.html -o public/portfolio_kr.html -a fin+env -s
+	SITE_RELEASE=true rad template/macro.r4d template/index.html        -o public/index.html        -a fin+env -s
+	SITE_RELEASE=true rad template/macro.r4d template/aboutme.html      -o public/aboutme.html      -a fin+env -s
+	SITE_RELEASE=true rad template/macro.r4d template/portfolio_kr.html -o public/portfolio_kr.html -a fin+env -s
 	cp -rf src/* public/
 
 serve:
