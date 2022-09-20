@@ -23,7 +23,7 @@
 		<div class="bg"> 
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand darkable-text" href="">Simon Creek</a>
+    <a class="navbar-brand darkable-text" href="http://localhost:8080">Simon Creek</a>
     <button class="navbar-toggler darkable-invert" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon darkable-text"></span>
     </button>
@@ -36,10 +36,10 @@
           <a class="nav-link darkable-text" href="https://github.com/simhyeon" style="background-color: #00000000;">Github</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link darkable-text" href="/aboutme.html" style="background-color: #00000000;">About Me</a>
+          <a class="nav-link darkable-text" href="http://localhost:8080/aboutme.html" style="background-color: #00000000;">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link darkable-text" href="/portfolio_kr.html" style="background-color: #00000000;">포트폴리오</a>
+          <a class="nav-link darkable-text" href="http://localhost:8080/portfolio_kr.html" style="background-color: #00000000;">포트폴리오</a>
         </li>
         <li class="nav-item">
           <a class="nav-link darkable-text" href="https://gd.simoncreek.xyz" style="background-color: #00000000;">역기획 저장소</a>
@@ -51,10 +51,10 @@
 			<div class="container-fluid p-5 col-md-8" style="max-width: 830px;">
 				<p>목차</p>
 				<ol>
-					<li><a href="#reverse-design" target="_self">콘텐츠 역기획</a></li>
+					<li><a href="#reverse-design" target="_self">게임 역기획</a></li>
 					<ul>
+						<li><a href="#vindictus-enhancement" target="_self">마비노기 영웅전 강화</a></li>
 						<li><a href="#black-desert-boss-rush" target="_self">검은사막M 토벌</a></li>
-						<li><a href="#dnfm-phantom-troupe" target="_self">던전앤파이터M 환영극단</a></li>
 					</ul>
 					<li><a href="#design-tools" target="_self">게임 디자인 도구 개발</a></li>
 					<ul>
@@ -70,25 +70,60 @@
 					</ul>
 				</ol>
 				<br></br>
-				<h3 id="reverse-design">콘텐츠 역기획</h3><a href="https://gd.simoncreek.xyz" target="_blank">모든 역기획서 저장소</a>
+				<h3 id="reverse-design">게임 역기획</h3><a href="https://gd.simoncreek.xyz" target="_blank">모든 역기획서 저장소</a>
 				<hr>
 				<br/>
 				<br>
-				<h4 id="black-desert-boss-rush">검은사막M 토벌 콘텐츠</h4>
+				<!-- Separator -->
+				<h4 id="black-desert-boss-rush">마비노기 영웅전 강화 시스템</h4>
+				<p>역기획서의 전체 내용 : <a href="https://1drv.ms/p/s!AiTdHZgDPvlSgwtFf9bznCB1msei?e=LaFt7Y,"><i class="fas fa-cloud"></i></a></p>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_intent.jpg" alt=""/>
+					<figcaption>시스템 기획 의도</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_flowchart.jpg" alt=""/>
+					<figcaption>시스템 진행 플로우차트</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_pen_evasion.jpg" alt=""/>
+					<figcaption>시스템 구성 </figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_cls_definition.jpg" alt=""/>
+					<figcaption>시스템 클래스 설계</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="./img/vin_ui_detail.jpg" alt=""/>
+					<figcaption>UI 구성</figcaption>
+				</figure>
+				<br/>
+				<figure>
+					<img style="width: 80%; display:block; margin:auto;"src="" alt=""/>
+					<figcaption>VBA 데이터 시뮬레이션</figcaption>
+				</figure>
+				<br>
+				<h4 id="black-desert-boss-rush">검은사막M 토벌 시스템</h4>
 				<p>역기획서의 전체 내용 : <a href="https://1drv.ms/p/s!AiTdHZgDPvlSgnRqmeKkKj1adERw?e=04hKqC"><i class="fas fa-cloud"></i></a></p>
 				<figure>
 					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_fee_1.png" alt="Black dessert entrance fee"/>
-					<figcaption>콘텐츠 구성 1</figcaption>
+					<figcaption>시스템 구성 1</figcaption>
 				</figure>
 				<br/>
 				<figure>
 					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_fee_2.png" alt="Black dessert entrace fee"/>
-					<figcaption>콘텐츠 구성 2</figcaption>
+					<figcaption>시스템 구성 2</figcaption>
 				</figure>
 				<br/>
 				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/bd_ratio.png" alt="Black dessert entrace fee"/>
-					<figcaption>콘텐츠 구성 3</figcaption>
+					<img style="width: 80%; display:block; margin:auto;"
+                        src="./img/bd_ratio.png" 
+                        alt="Black dessert entrace fee"/>
+					<figcaption>시스템 구성 3</figcaption>
 				</figure>
 				<br/>
 				<figure>
@@ -102,25 +137,6 @@
 				</figure>
 				<br>
 				<!-- Separator -->
-				<h4 id="dnfm-phantom-troupe">던파M 환영극단</h4>
-				<p>역기획서의 전체 내용 : <a href="https://gd.simoncreek.xyz/simoncreek/dnfm_phantom_troupe/src/branch/master/public/out.pdf"><i class="fab fa-github"></i></a></p>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/dnf_direction.png" alt="Dnf design direction"/>
-					<figcaption>콘텐츠 구성 1</figcaption>
-				</figure>
-				<br/>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/dnf_entry.png" alt="Dfn entry level"/>
-					<figcaption>콘텐츠 구성 2</figcaption>
-				</figure>
-				<br/>
-				<figure>
-					<img style="width: 80%; display:block; margin:auto;"src="./img/dnf_set.png" alt="Dnf set item"/>
-					<figcaption>콘텐츠 구성 3</figcaption>
-				</figure>
-				<br>
-				<!-- Separator -->
-
 				<h3 id="design-tools">게임 디자인 도구 개발</h3>
 				<hr/>
 				<p>
